@@ -11,7 +11,6 @@ import java.util.List;
 public interface DemoService {
 
     DemoModel addEntries(DemoModel demoModel);
-
     
     DemoModel getEntries(Long id) throws DemoModelNotFoundException;
 
