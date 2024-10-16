@@ -12,7 +12,7 @@ public interface DemoService {
 
     DemoModel addEntries(DemoModel demoModel);
 
-    
+    kjkj
     DemoModel getEntries(Long id) throws DemoModelNotFoundException;
 
     List<DemoModel> getAllEntries();
