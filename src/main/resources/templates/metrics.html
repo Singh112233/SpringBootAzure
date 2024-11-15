@@ -1,0 +1,41 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Live Metrics</title>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+<!--    <script>-->
+<!--        function fetchMetrics() {-->
+<!--            const metricName = document.getElementById('metricName').value;-->
+<!--            const timespan = 'PT5D'; // Last 5 minutes-->
+<!--            fetch(`/liveMetrics?metricName=${metricName}&timespan=${timespan}`)-->
+<!--                .then(response => response.json())-->
+<!--                .then(data => {-->
+<!--                    const ctx = document.getElementById('metricsChart').getContext('2d');-->
+<!--                    new Chart(ctx, {-->
+<!--                        type: 'line',-->
+<!--                        data: {-->
+<!--                            labels: data.value.timestamps, // Assuming timestamps in API response-->
+<!--                            datasets: [{-->
+<!--                                label: metricName,-->
+<!--                                data: data.value.values // Assuming values in API response-->
+<!--                            }]-->
+<!--                        }-->
+<!--                    });-->
+<!--                });-->
+<!--        }-->
+
+<!--        // Auto-refresh metrics every 30 seconds-->
+<!--        setInterval(fetchMetrics, 30000);-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Live Metrics</h1>-->
+
+<!--<label for="metricName">Metric Name:</label>-->
+<!--<input type="text" id="metricName" value="requests/count">-->
+<!--<button onclick="fetchMetrics()">Fetch Metrics</button>-->
+
+<!--<canvas id="metricsChart" width="400" height="200"></canvas>-->
+
+<!--</body>-->
+<!--</html>-->
